@@ -11,6 +11,7 @@ end
 def long_planeteer_calls(calls)
   calls.any? { |call| call.length >= 4 }
   calls.any? { |call| call.length <= 3 }
+  calls.all? { |call| call.length < 4 }
 end
 
 def find_the_cheese(strings)
